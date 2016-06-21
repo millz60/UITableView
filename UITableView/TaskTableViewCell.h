@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TaskTableViewCell.h
 //  UITableView
 //
 //  Created by Matt Milner on 6/21/16.
@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface TaskTableViewCell : UITableViewCell
+{
+
+}
+
+@property (nonatomic,weak) IBOutlet UILabel *title;
 
 
 @end
-
