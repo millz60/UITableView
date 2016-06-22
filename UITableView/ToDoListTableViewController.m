@@ -8,6 +8,7 @@
 
 #import "ToDoListTableViewController.h"
 #import "TaskTableViewCell.h"
+#import "Task.h"
 
 @interface ToDoListTableViewController ()
 
@@ -24,8 +25,26 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    _taskList = [NSMutableArray arrayWithObjects:@"Practice Coding",@"Eat Dinner",@"Play Video Games",@"Do Laundry",@"Watch USA Soccer Match", nil];
+    //_taskList = [NSMutableArray arrayWithObjects:@"Practice Coding",@"Eat Dinner",@"Play Video Games",@"Do Laundry",@"Watch USA Soccer Match", nil];
     
+    
+    
+    Task *Laundry = [[Task alloc] init];
+    Laundry.title = @"Do Laundry";
+    
+    Task *WatchSoccer = [[Task alloc] init];
+    WatchSoccer.title = @"Watch USA vs. Argentina Game";
+    
+    Task *Coding = [[Task alloc] init];
+    Coding.title = @"Practice Coding";
+    
+    Task *VideoGames = [[Task alloc] init];
+    VideoGames.title = @"Play Video Games";
+    
+    Task *Dinner = [[Task alloc] init];
+    Dinner.title = @"Eat Dinner";
+    
+    _taskList = [NSMutableArray arrayWithObjects: Laundry, WatchSoccer,Coding,VideoGames,Dinner,nil];
     
     
 }
@@ -54,7 +73,12 @@
     
     // Configure the cell...
     
-    cell.title.text = _taskList[indexPath.row];
+    NSInteger currentIndex = indexPath.row;
+    
+    Task *currentTask = [[Task alloc] init];
+    currentTask = _taskList[currentIndex];
+    
+    cell.title.text = currentTask.title;
     
     return cell;
 }

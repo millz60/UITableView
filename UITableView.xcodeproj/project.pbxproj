@@ -14,6 +14,7 @@
 		C9E799FF1D19E88E005FC48E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9E799FD1D19E88E005FC48E /* LaunchScreen.storyboard */; };
 		C9E79A081D19E924005FC48E /* ToDoListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E79A071D19E924005FC48E /* ToDoListTableViewController.m */; };
 		C9E79A0E1D19ED0B005FC48E /* TaskTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E79A0D1D19ED0B005FC48E /* TaskTableViewCell.m */; };
+		C9E79A111D1A3F31005FC48E /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E79A101D1A3F31005FC48E /* Task.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		C9E79A071D19E924005FC48E /* ToDoListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoListTableViewController.m; sourceTree = "<group>"; };
 		C9E79A0C1D19ED0B005FC48E /* TaskTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskTableViewCell.h; sourceTree = "<group>"; };
 		C9E79A0D1D19ED0B005FC48E /* TaskTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskTableViewCell.m; sourceTree = "<group>"; };
+		C9E79A0F1D1A3F31005FC48E /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
+		C9E79A101D1A3F31005FC48E /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,8 @@
 				C9E799F01D19E88E005FC48E /* main.m */,
 				C9E79A0C1D19ED0B005FC48E /* TaskTableViewCell.h */,
 				C9E79A0D1D19ED0B005FC48E /* TaskTableViewCell.m */,
+				C9E79A0F1D1A3F31005FC48E /* Task.h */,
+				C9E79A101D1A3F31005FC48E /* Task.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -154,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9E79A111D1A3F31005FC48E /* Task.m in Sources */,
 				C9E79A0E1D19ED0B005FC48E /* TaskTableViewCell.m in Sources */,
 				C9E79A081D19E924005FC48E /* ToDoListTableViewController.m in Sources */,
 				C9E799F41D19E88E005FC48E /* AppDelegate.m in Sources */,

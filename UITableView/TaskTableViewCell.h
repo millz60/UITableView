@@ -10,7 +10,7 @@
 
 @interface TaskTableViewCell : UITableViewCell
 {
-
+    NSMutableArray *_taskList;
 }
 
 @property (nonatomic,weak) IBOutlet UILabel *title;
